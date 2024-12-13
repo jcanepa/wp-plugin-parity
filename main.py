@@ -11,4 +11,5 @@ for x in f:
     if name_matches_custom_plugin(x):
         continue
 
-    print("wp plugin install", x)
+    plugin = x.strip()
+    print(f"wp plugin install {plugin} --activate")
